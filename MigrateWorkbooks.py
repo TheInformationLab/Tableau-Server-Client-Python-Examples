@@ -39,6 +39,9 @@ with server.auth.sign_in(tableau_auth):
     print("\nDownloaded the file to {0}.".format(downloaded_file))
 
     # Need to modify any data connections along the way? Do them here
+    # First uncomment the document API import at the top of the script,
+    # then make your data connection modifications at will
+
     #sourceWB = Workbook(downloaded_file)
     #sourceWB.datasources[0].connections[0].dbname = "newDB"
     #sourceWB.save_as(sourceWorkbook + '.twbx')
